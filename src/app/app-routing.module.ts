@@ -17,13 +17,13 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
-  path: 'admin',
-  component: AdminComponent,
-  canActivate: [AuthGuard]
+    path: 'admin',
+    component: AdminComponent,
+    canActivate: [AuthGuard]
   },
   {
-  path: 'callback',
-  component: CallbackComponent
+    path: 'callback',
+    component: CallbackComponent
   }
 ];
 

@@ -12,11 +12,17 @@ export class VehicleService {
   constructor(private http:HttpClient) { }
 
   getVehicles() {
-    return this.http.get('/server/api/v1/vehicles');
+    let token = localStorage.getItem('access_token');
+    return this.http.get('/server/api/v1/vehicles',
+      {headers: new HttpHeaders().set('Authorization', 'Bearer ' + token)}
+    );
   }
 
   getVehicle(id: number) {
-    return this.http.get('/server/api/v1/vehicles/' + id);
+    let token = localStorage.getItem('access_token');
+    return this.http.get('/server/api/v1/vehicles/' + id,
+      {headers: new HttpHeaders().set('Authorization', 'Bearer ' + token)}
+    );
   }
 
   createVehicleRegistration(vehicle) {

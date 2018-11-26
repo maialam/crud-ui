@@ -7,8 +7,8 @@ import * as auth0 from 'auth0-js';
 export class AuthService {
 
   auth0 = new auth0.WebAuth({
-    clientID: '<lZts5CfV4a5U7kahNb72cY3LA9B75XR4>',
-    domain: '<maialam.eu.auth0.com>',
+    clientID: 'pBWfPuTfvTg9fDCIiffqFrWGKpcYIgWk',
+    domain: 'maialam.eu.auth0.com',
     responseType: 'token id_token',
     audience: 'http://localhost:8080',
     redirectUri: 'http://localhost:4200/callback',
