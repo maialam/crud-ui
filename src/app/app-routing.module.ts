@@ -25,6 +25,7 @@ const routes: Routes = [
     path: 'callback',
     component: CallbackComponent
   }
+  
 ];
 
 @NgModule({
