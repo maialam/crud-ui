@@ -1,5 +1,6 @@
 <div class="container">
-  <table class="table table-bordered table-inverse">
+
+  <table class="table table-inverse table-striped">
     <tr>
       <th>Owner Name</th>
       <th>Email</th>
@@ -8,7 +9,7 @@
     </tr>
     <tr *ngFor="let vehicle of vehicles">
       <td>
-        <a [routerLink]="['/admin/view', vehicle.id]">{{vehicle.name}}</a>
+        <a class="text-info" [routerLink]="['/admin/view', vehicle.id]">{{vehicle.name}}</a>
       </td>
       <td>
         {{vehicle.email}}
